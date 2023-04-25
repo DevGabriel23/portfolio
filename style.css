@@ -191,7 +191,6 @@ header {
 	width: 100%;
 	z-index: 1000;
 	max-height: 4rem;
-	color: inherit;
 }
 
 nav{
@@ -215,7 +214,7 @@ nav #github{
 	justify-content: space-around;
 	padding: 0.3rem 0;
 	padding-right: 1rem;
-	border: var(--white);
+	border: inherit;
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 10px;

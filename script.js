@@ -14,6 +14,40 @@ window.addEventListener('scroll', function () {
     header.querySelector('.name').style.fontSize = nuevoTamanio;
 });
 
+window.addEventListener('scroll', function () {
+
+    let nav = document.querySelector('nav');
+    let links = nav.querySelectorAll('a');
+    let title = document.getElementById('name');
+
+    let sectionProjects = document.getElementById('projects');
+    let sectionSocials = document.getElementById('socials');
+    let sectionProjectsTop = sectionProjects.offsetTop;
+    let sectionSocialsTop = sectionSocials.offsetTop;
+    let windowHeight = window.innerHeight;
+    let windowScroll = this.scrollY;
+
+    if (windowScroll+60 > sectionProjectsTop && windowScroll < (sectionSocialsTop-60 + sectionSocials.offsetHeight - windowHeight)) {
+        header.style.backgroundColor = 'var(--white)';
+        title.style.color = 'var(--primary)';
+        links.forEach(function(enlace) {
+            enlace.style.color = 'var(--primary)';
+        });
+    } else if (windowScroll+60 >= sectionSocialsTop){
+        header.style.backgroundColor = 'var(--black)';
+        title.style.color = 'var(--primary)';
+        links.forEach(function(enlace) {
+            enlace.style.color = 'var(--primary)';
+        });
+    } else {
+        header.style.backgroundColor = 'var(--primary)';
+        title.style.color = 'var(--white)';
+        links.forEach(function(enlace) {
+            enlace.style.color = 'var(--white)';
+        });
+    }
+});
+
 // Leer datos del archivo JSON
 fetch('projects.json')
     .then(response => response.json())
