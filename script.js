@@ -61,12 +61,15 @@ fetch('projects.json')
             const proyectoDiv = document.createElement('div');
             const tituloElemento = document.createElement('h2');
             const descripcionElemento = document.createElement('p');
+            const tecnologias = document.createElement('div');
             const urlElemento = document.createElement('a');
+            
 
             // Agregar clases CSS a los elementos
             proyectoDiv.classList.add('project');
             tituloElemento.classList.add('project-title');
-            descripcionElemento.classList.add('project-description');
+            descripcionElemento.classList.add('description');
+            tecnologias.classList.add('tecnologies')
             urlElemento.classList.add('project-url');
 
             // Establecer contenido y atributos de los elementos
@@ -74,11 +77,18 @@ fetch('projects.json')
             descripcionElemento.textContent = project.description;
             urlElemento.href = project.url;
             urlElemento.target = '_blank'
-            urlElemento.textContent = 'Ver más';
+            urlElemento.textContent = 'Github';
 
             // Agregar elementos al div del portafolio
             proyectoDiv.appendChild(tituloElemento);
             proyectoDiv.appendChild(descripcionElemento);
+            project.tecnologias.forEach( tecnology => {
+                let tec = document.createElement('p');
+                tec.classList.add('tecnology')
+                tec.textContent = tecnology
+                tecnologias.appendChild(tec);
+            })
+            proyectoDiv.appendChild(tecnologias);
             proyectoDiv.appendChild(urlElemento);
             portafolioDiv.appendChild(proyectoDiv);
         });
@@ -89,7 +99,6 @@ fetch('projects.json')
 fetch('socials.json')
     .then(response => response.json())
     .then(data => {
-        // Obtener referencia al div del portafolio
         const socialsDiv = document.getElementById('socials-container');
 
         // Recorrer los datos del JSON
@@ -100,10 +109,8 @@ fetch('socials.json')
             const urlElemento = document.createElement('a');
 
             // Agregar clases CSS a los elementos
-            socialDiv.classList.add('social');
             iconElemento.classList.add('fa-brands');
             iconElemento.classList.add(social.icon);
-            iconElemento.classList.add('social-icon');
             urlElemento.classList.add('social-url');
 
             // Establecer contenido y atributos de los elementos

@@ -2,16 +2,19 @@
 	{
 		"name": "Proyecto 1",
 		"description": "Descripción del proyecto 1",
+		"tecnologias": ["tec1", "tec2", "tec4"],
 		"url": "https://github.com/DevGabriel23"
 	},
 	{
 		"name": "Proyecto 2",
 		"description": "Descripción del proyecto 2",
+		"tecnologias": ["tec1", "tec4"],
 		"url": "https://github.com/DevGabriel23"
 	},
 	{
 		"name": "Proyecto 3",
 		"description": "Descripción del proyecto 3",
+		"tecnologias": ["tec1", "tec2", "tec3", "tec4"],
 		"url": "https://github.com/DevGabriel23"
 	}
 ]

@@ -21,7 +21,7 @@ h1{
 .projects,
 .socials {
 	padding-top: 10vh;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 }
 
@@ -134,19 +134,50 @@ h1{
 	max-width: 48%;
 }
 
+.projects,
+.socials{
+	align-items: center;
+}
+
 .projects {
 	background-color: var(--white);
     flex-direction: column;
 }
 
 .projects .title{
+    padding: 3rem;
+	text-shadow: -4px 3px 2px var(--black) ;
     text-align: center;
+	color: var(--primary);
+	font-size: 3rem;
+	font-weight: bolder;
+}
+
+.project{
+	margin: 1rem;
+	height: 250px;
+	width: 250px;
+	padding: 2rem;
+	border: 3px solid red;
+}
+
+.project .tecnologies{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+}
+
+.project .tecnologies .tecnology{
+	flex-basis: 4rem;
+	border: 1px solid var(--gray);
+	padding: 0.3rem 0.5rem;
+	margin: 0.25rem 0.5rem;
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* 3 columnas de ancho flexible */
-	grid-gap: 1rem; /* Espaciado entre los elementos */
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
 }
 
 .socials {
@@ -154,8 +185,18 @@ h1{
     flex-direction: column;
 }
 
+
 .socials .title{
+	padding: 0 3rem;
+	text-shadow: -4px 3px 2px var(--primary) ;
     text-align: center;
+	color: var(--white);
+	font-size: 3rem;
+	font-weight: bolder;
+}
+
+.socials-container{
+	justify-content: space-evenly;
 }
 
 #socials a{
@@ -164,19 +205,23 @@ h1{
 }
 
 .social-url{
-    width: 200px;
-}
-
-.social{
+	margin: 2rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
     height: 200px;
-    background-color: gray;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+	background: rgba(255, 254, 255, 0.33);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(9.4px);
+	-webkit-backdrop-filter: blur(9.4px);
+	border: 1px solid rgba(255, 254, 255, 1);
 }
 
-.social-icon{
-    font-size: 9rem;
+.social-url i{
+	font-size: 9rem;
+	color: var(--gray);
 }
 
 header {
