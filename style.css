@@ -1,6 +1,8 @@
 :root{
 	--white: #FFFEFF;
+	--black: #010101;
 	--gray: #D6D5D6;
+	--primary: #A3AEB8;
 }
 
 * {
@@ -17,18 +19,19 @@ h1{
 
 .home,
 .projects,
-.social {
+.socials {
+	padding-top: 10vh;
 	height: 100vh;
 	display: flex;
 }
 
 .home {
-	background-color: #A3AEB8;
+	background-color: var(--primary);
 	color: var(--white);
 }
 
 .bio {
-	padding-top: 45vh;
+	padding-top: 37vh;
 	width: 50%;
 	margin-left: 4rem;
 	font-size: 1.2rem;
@@ -53,14 +56,16 @@ h1{
 }
 
 .form {
+	background: rgba(194, 194, 194, 0.3);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border: 1px solid rgba(194, 194, 194, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
-	border-color: #0e0e0e;
-	border-radius: 20px;
-	border-style: solid;
-	border-width: 3px;
 	height: 65%;
 	width: 25rem;
 }
@@ -69,20 +74,50 @@ h1{
 	margin: 0 2rem;
 }
 
+.form h1{
+	font-size: 2rem;
+}
+
 .form input, textarea{
 	font-size: 1rem;
-	border-radius: 10px;
 	padding: 0.7rem;
 	width: 100%;
 	margin: 0.5rem 0;
+
+	background: rgba(194, 194, 194, 0.3);
+	border-radius: 10px;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border: 1px solid rgba(194, 194, 194, 1);
+	color: var(--white);
+}
+
+.form input::placeholder, textarea::placeholder{
+	color: #777;
+}
+
+.form input:focus, textarea:focus{
+	outline: none;
+	background: rgb(170, 170, 170);
 }
 
 .form button{
-	font-size: 1.2rem;
+	background: rgba(200, 200, 200, 0.2);
 	border-radius: 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.4px);
+	-webkit-backdrop-filter: blur(5.4px);
+
+	font-size: 1.2rem;
 	padding: 1rem;
 	width: 40%;
 	margin-bottom: 0.5rem;
+	cursor: pointer;
+	color: var(--white);
+}
+
+.form button:hover{
+	background: rgba(200, 200, 200, 0.9);
 }
 
 .form #message{
@@ -100,7 +135,7 @@ h1{
 }
 
 .projects {
-	background-color: #0e0e0e;
+	background-color: var(--white);
     flex-direction: column;
 }
 
@@ -115,7 +150,8 @@ h1{
 }
 
 .socials {
-	background-color: aliceblue;
+	background-color: var(--black);
+    flex-direction: column;
 }
 
 .socials .title{
@@ -148,7 +184,7 @@ header {
 	justify-content: space-between;
 	align-content: center;
     align-items: center;
-	background-color: #A3AEB8;
+	background-color: var(--primary);
 	padding: 1rem;
 	position: fixed;
 	top: 0;
@@ -205,8 +241,4 @@ nav i{
 #name a {
 	text-decoration: none;
 	color: inherit;
-}
-
-.contenido {
-	padding-top: 25px;
 }
