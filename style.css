@@ -1,0 +1,212 @@
+:root{
+	--white: #FFFEFF;
+	--gray: #D6D5D6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+h1{
+	font-size: 1.7rem;
+}
+
+.home,
+.projects,
+.social {
+	height: 100vh;
+	display: flex;
+}
+
+.home {
+	background-color: #A3AEB8;
+	color: var(--white);
+}
+
+.bio {
+	padding-top: 45vh;
+	width: 50%;
+	margin-left: 4rem;
+	font-size: 1.2rem;
+}
+
+.bio p{
+	text-justify: distribute;
+}
+
+.bio #occupation{
+	color: var(--gray);
+	font-weight: 600;
+	font-size: 1.45rem;
+	margin-bottom: 1.2rem;
+}
+
+.contact-me {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+	border-color: #0e0e0e;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 3px;
+	height: 65%;
+	width: 25rem;
+}
+
+.form .inputs{
+	margin: 0 2rem;
+}
+
+.form input, textarea{
+	font-size: 1rem;
+	border-radius: 10px;
+	padding: 0.7rem;
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+.form button{
+	font-size: 1.2rem;
+	border-radius: 10px;
+	padding: 1rem;
+	width: 40%;
+	margin-bottom: 0.5rem;
+}
+
+.form #message{
+	resize: none;
+	height: 10rem;
+}
+
+.name-lastname{
+	display: flex;
+	justify-content:space-between;
+}
+
+.name-lastname input{
+	max-width: 48%;
+}
+
+.projects {
+	background-color: #0e0e0e;
+    flex-direction: column;
+}
+
+.projects .title{
+    text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 columnas de ancho flexible */
+	grid-gap: 1rem; /* Espaciado entre los elementos */
+}
+
+.socials {
+	background-color: aliceblue;
+}
+
+.socials .title{
+    text-align: center;
+}
+
+#socials a{
+    text-decoration: none;
+	color: inherit;
+}
+
+.social-url{
+    width: 200px;
+}
+
+.social{
+    height: 200px;
+    background-color: gray;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon{
+    font-size: 9rem;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+    align-items: center;
+	background-color: #A3AEB8;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	max-height: 4rem;
+	color: inherit;
+}
+
+nav{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 3rem;
+	font-weight: 600;
+}
+
+nav a{
+	font-size: 1.2rem;
+	margin: 1rem 1.2rem;
+	text-decoration: none;
+	color: var(--white);
+}
+
+nav #github{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.3rem 0;
+	padding-right: 1rem;
+	border: var(--white);
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 10px;
+}
+
+nav i{
+	font-size: 2.1rem;
+	padding-left: 1rem;
+	padding-right: 0.4rem;
+}
+
+.name{
+	color: var(--white);
+	padding-left: 3rem;
+	margin: 0;
+	position: relative;
+	top: 44vh;
+	transform: translateY(-50%);
+	width: 50%;
+	font-weight: bolder;
+}
+
+#name a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.contenido {
+	padding-top: 25px;
+}

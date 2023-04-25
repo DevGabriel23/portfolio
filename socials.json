@@ -1,0 +1,27 @@
+[
+    {
+        "name":"Twitter",
+        "icon": "fa-twitter",
+        "url": "link"
+    },
+    {
+        "name":"Facebook",
+        "icon": "fa-square-facebook",
+        "url": "link"
+    },
+    {
+        "name":"Instagram",
+        "icon": "fa-instagram",
+        "url": "link"
+    },
+    {
+        "name":"Linkedin",
+        "icon": "fa-linkedin",
+        "url": "link"
+    },
+    {
+        "name":"Github",
+        "icon": "fa-github",
+        "url": "https://github.com/DevGabriel23"
+    }
+]
