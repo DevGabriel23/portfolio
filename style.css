@@ -102,7 +102,7 @@ h1{
 }
 
 .form button{
-	background: rgba(200, 200, 200, 0.2);
+	background: rgb(195, 195, 195);
 	border-radius: 10px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5.4px);
@@ -117,7 +117,7 @@ h1{
 }
 
 .form button:hover{
-	background: rgba(200, 200, 200, 0.9);
+	background: rgba(206, 206, 206, 1);
 }
 
 .form #message{
@@ -154,11 +154,50 @@ h1{
 }
 
 .project{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 	margin: 1rem;
 	height: 250px;
 	width: 250px;
 	padding: 2rem;
-	border: 3px solid red;
+	background-color:var(--black);
+	border-radius: 10px;
+	color: var(--white);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.project:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transform: translateY(-5px);
+}
+
+.project .info{
+	display: none;
+}
+
+.project:hover .info{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.project .description{
+	text-align: justify;
+}
+
+.project:hover .project-title{
+	display: none;
+}
+
+.project .project-url{
+	width: 100%;
+	color: var(--white);
+	text-align: center;
 }
 
 .project .tecnologies{
@@ -168,10 +207,11 @@ h1{
 }
 
 .project .tecnologies .tecnology{
-	flex-basis: 4rem;
 	border: 1px solid var(--gray);
-	padding: 0.3rem 0.5rem;
-	margin: 0.25rem 0.5rem;
+	border-radius: 15px;
+	padding: 0.3rem 0.7rem;
+	margin: 0.25rem 0;
+	margin-left: 0.5rem;
 }
 
 .grid-container {
@@ -184,7 +224,6 @@ h1{
 	background-color: var(--black);
     flex-direction: column;
 }
-
 
 .socials .title{
 	padding: 0 3rem;
@@ -224,6 +263,23 @@ h1{
 	color: var(--gray);
 }
 
+.down-button{
+	position: absolute;
+	left: 50%;
+	align-self:flex-end;
+	padding-bottom: 1rem;
+	font-size: 3.5rem;
+	background-color: transparent;
+	cursor: pointer;
+	width: 4rem;
+	color: var(--white);
+	transition: all 2s ease;
+}
+
+.down-button:hover{
+	transform: translateY(-10px);
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -235,7 +291,7 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-	max-height: 4rem;
+	max-height: 6rem;
 }
 
 nav{
@@ -247,7 +303,7 @@ nav{
 }
 
 nav a{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin: 1rem 1.2rem;
 	text-decoration: none;
 	color: var(--white);
@@ -276,10 +332,11 @@ nav i{
 	padding-left: 3rem;
 	margin: 0;
 	position: relative;
-	top: 44vh;
+	top: 43vh;
 	transform: translateY(-50%);
 	width: 50%;
 	font-weight: bolder;
+	font-size: 2.5rem;
 }
 
 #name a {

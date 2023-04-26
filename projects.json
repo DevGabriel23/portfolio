@@ -1,20 +1,20 @@
 [
 	{
-		"name": "Proyecto 1",
-		"description": "Descripción del proyecto 1",
-		"tecnologias": ["tec1", "tec2", "tec4"],
-		"url": "https://github.com/DevGabriel23"
+		"name": "Countdown Plugin for Wordpress",
+		"description": "Plugin para mostrar una cuenta cuenta regresiva hasta una fecha establecida",
+		"tecnologias": ["PHP", "Javascript", "HTML5"],
+		"url": "https://github.com/DevGabriel23/PluginCountdownWordPress"
 	},
 	{
-		"name": "Proyecto 2",
-		"description": "Descripción del proyecto 2",
-		"tecnologias": ["tec1", "tec4"],
-		"url": "https://github.com/DevGabriel23"
+		"name": "React GifExpert",
+		"description": "Buscador de gifs usando la API de Giphy",
+		"tecnologias": ["React", "Javascript"],
+		"url": "https://github.com/DevGabriel23/react-gif-expert"
 	},
 	{
-		"name": "Proyecto 3",
-		"description": "Descripción del proyecto 3",
-		"tecnologias": ["tec1", "tec2", "tec3", "tec4"],
-		"url": "https://github.com/DevGabriel23"
+		"name": "ToMenu",
+		"description": "Demo de un menú digital para un restaurant",
+		"tecnologias": ["React"],
+		"url": "https://github.com/DevGabriel23/toMenu"
 	}
 ]
