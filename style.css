@@ -1,7 +1,7 @@
-:root{
+:root {
 	--white: #ebe3ff;
 	--black: #0a0909;
-	--gray: #D6D5D6;
+	--gray: #d6d5d6;
 	--primary: #7484b9;
 }
 
@@ -10,10 +10,10 @@
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-h1{
+h1 {
 	font-size: 1.7rem;
 }
 
@@ -37,11 +37,11 @@ h1{
 	font-size: 1.2rem;
 }
 
-.bio p{
+.bio p {
 	text-justify: distribute;
 }
 
-.bio #occupation{
+.bio #occupation {
 	color: var(--gray);
 	font-weight: 600;
 	font-size: 1.45rem;
@@ -62,23 +62,24 @@ h1{
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	border: 1px solid rgba(194, 194, 194, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-around;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 	height: 65%;
 	width: 25rem;
 }
 
-.form .inputs{
+.form .inputs {
 	margin: 0 2rem;
 }
 
-.form h1{
+.form h1 {
 	font-size: 2rem;
 }
 
-.form input, textarea{
+.form input,
+textarea {
 	font-size: 1rem;
 	padding: 0.7rem;
 	width: 100%;
@@ -92,16 +93,18 @@ h1{
 	color: var(--white);
 }
 
-.form input::placeholder, textarea::placeholder{
+.form input::placeholder,
+textarea::placeholder {
 	color: #777;
 }
 
-.form input:focus, textarea:focus{
+.form input:focus,
+textarea:focus {
 	outline: none;
 	background: rgb(170, 170, 170);
 }
 
-.form button{
+.form button {
 	background: rgb(195, 195, 195);
 	border-radius: 10px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -116,44 +119,44 @@ h1{
 	color: var(--white);
 }
 
-.form button:hover{
+.form button:hover {
 	background: rgba(206, 206, 206, 1);
 }
 
-.form #message{
+.form #message {
 	resize: none;
 	height: 10rem;
 }
 
-.name-lastname{
+.name-lastname {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 }
 
-.name-lastname input{
+.name-lastname input {
 	max-width: 48%;
 }
 
 .projects,
-.socials{
+.socials {
 	align-items: center;
 }
 
 .projects {
 	background-color: var(--white);
-    flex-direction: column;
+	flex-direction: column;
 }
 
-.projects .title{
-    padding: 3rem;
-	text-shadow: -4px 3px 2px var(--black) ;
-    text-align: center;
+.projects .title {
+	padding: 3rem;
+	text-shadow: -4px 3px 2px var(--black);
+	text-align: center;
 	color: var(--primary);
 	font-size: 3rem;
 	font-weight: bolder;
 }
 
-.project{
+.project {
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -162,7 +165,7 @@ h1{
 	height: 250px;
 	width: 250px;
 	padding: 2rem;
-	background-color:var(--black);
+	background-color: var(--black);
 	border-radius: 10px;
 	color: var(--white);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -174,11 +177,11 @@ h1{
 	transform: translateY(-5px);
 }
 
-.project .info{
+.project .info {
 	display: none;
 }
 
-.project:hover .info{
+.project:hover .info {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
@@ -186,27 +189,27 @@ h1{
 	height: 100%;
 }
 
-.project .description{
+.project .description {
 	text-align: justify;
 }
 
-.project:hover .project-title{
+.project:hover .project-title {
 	display: none;
 }
 
-.project .project-url{
+.project .project-url {
 	width: 100%;
 	color: var(--white);
 	text-align: center;
 }
 
-.project .tecnologies{
+.project .tecnologies {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: stretch;
 }
 
-.project .tecnologies .tecnology{
+.project .tecnologies .tecnology {
 	border: 1px solid var(--gray);
 	border-radius: 15px;
 	padding: 0.3rem 0.7rem;
@@ -222,34 +225,34 @@ h1{
 
 .socials {
 	background-color: var(--black);
-    flex-direction: column;
+	flex-direction: column;
 }
 
-.socials .title{
+.socials .title {
 	padding: 0 3rem;
-	text-shadow: -4px 3px 2px var(--primary) ;
-    text-align: center;
+	text-shadow: -4px 3px 2px var(--primary);
+	text-align: center;
 	color: var(--white);
 	font-size: 3rem;
 	font-weight: bolder;
 }
 
-.socials-container{
+.socials-container {
 	justify-content: space-evenly;
 }
 
-#socials a{
-    text-decoration: none;
+#socials a {
+	text-decoration: none;
 	color: inherit;
 }
 
-.social-url{
+.social-url {
 	margin: 2rem 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 200px;
-    height: 200px;
+	height: 200px;
 	background: rgba(255, 254, 255, 0.33);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -258,15 +261,15 @@ h1{
 	border: 1px solid rgba(255, 254, 255, 1);
 }
 
-.social-url i{
+.social-url i {
 	font-size: 9rem;
 	color: var(--gray);
 }
 
-.down-button{
+.down-button {
 	position: absolute;
 	left: 50%;
-	align-self:flex-end;
+	align-self: flex-end;
 	padding-bottom: 1rem;
 	font-size: 3.5rem;
 	background-color: transparent;
@@ -276,7 +279,7 @@ h1{
 	transition: all 2s ease;
 }
 
-.down-button:hover{
+.down-button:hover {
 	transform: translateY(-10px);
 }
 
@@ -284,7 +287,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-    align-items: center;
+	align-items: center;
 	background-color: var(--primary);
 	padding: 1rem;
 	position: fixed;
@@ -294,7 +297,7 @@ header {
 	max-height: 6rem;
 }
 
-nav{
+nav {
 	display: flex;
 	justify-content: end;
 	align-items: center;
@@ -302,14 +305,14 @@ nav{
 	font-weight: 600;
 }
 
-nav a{
+nav a {
 	font-size: 1.4rem;
 	margin: 1rem 1.2rem;
 	text-decoration: none;
 	color: var(--white);
 }
 
-nav #github{
+nav #github {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -321,13 +324,13 @@ nav #github{
 	border-radius: 10px;
 }
 
-nav i{
+nav i {
 	font-size: 2.1rem;
 	padding-left: 1rem;
 	padding-right: 0.4rem;
 }
 
-.name{
+.name {
 	color: var(--white);
 	padding-left: 3rem;
 	margin: 0;
@@ -342,4 +345,32 @@ nav i{
 #name a {
 	text-decoration: none;
 	color: inherit;
+}
+
+/* Estilos para la barra de scroll */
+::-webkit-scrollbar {
+	
+	width: 10px; /* Ancho de la barra de scroll */
+}
+
+/* Estilo del track */
+::-webkit-scrollbar-track {
+	
+	background: #f1f1f1; /* Color del fondo del track */
+}
+
+/* Estilo del thumb */
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: #888; /* Color del thumb */
+}
+
+/* Estilo del thumb al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; /* Color del thumb al pasar el mouse */
+}
+
+footer {
+	padding: 0.5rem;
+	text-align: center;
 }
